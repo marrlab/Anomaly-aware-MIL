@@ -9,6 +9,7 @@ This model architecture contains 4 parts:
 2. Deep encoder: a feature extractor with 3 convolution layers.
 3. Attention mechanism: a two linear layer to estimate the attention score for each instance
 4. Anomaly scoring: the Mahalanobis distance of each instance to the gaussian mixture model fitted on healthy data distribution. 
+
 ![Anomaly-aware MIL architecture](diagram.png)
 
 # Requirements
