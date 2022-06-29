@@ -13,7 +13,9 @@ This model architecture contains 4 parts:
 ![Anomaly-aware MIL architecture](diagram.png)
 
 # Requirements
-The code is compatible with pytorch 1.10.0.
+The code is compatible with 
+
+```pytorch 1.10.0```
 
 # Data
 We used our private dataset. Therefore, to use this model for your target domain you need to manipulate DataLoader.py and HDataLoader.py files compatible with your data structure.
@@ -24,6 +26,7 @@ Also, we have a healthy control group (33 individuals, 181 samples), used as neg
 # Execution
 ## train 
 Run:
+
 ```trainMIL.py <fold_number><model_name><run_number>```
 
 Please note!
@@ -32,6 +35,7 @@ When training is accomplished the learned parameters are stored at Model reposit
 
 ## test
 Run: 
+
 ```testMIL.py```
 
 # Acknowledgement
