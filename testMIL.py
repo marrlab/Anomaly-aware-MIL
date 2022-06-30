@@ -37,8 +37,7 @@ for fold in range(3):
                                         batch_size=1, shuffle=False, **loader_kwargs)
     # loading healthy data
     H_loader = data_utils.DataLoader(HealthyLoader(foldnumber=fold, train=True),
-                                     batch_size=1, shuffle=False, **loader_kwargs) ##############################!!!!!!!!!!!!####################################
-########## HLoader should load train healthy data !!!!! not test healthy data
+                                     batch_size=1, shuffle=False, **loader_kwargs) 
 
     model_runs = []
     for run in range(5):
